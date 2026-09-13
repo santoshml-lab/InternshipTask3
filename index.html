@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Accessible enterprise dashboard built with semantic HTML5."
+  >
+  <title>Accessible Enterprise Dashboard</title>
+</head>
+
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-label="Dashboard home">
+        Dashboard
+      </a>
+
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside aria-label="Sidebar navigation">
+    <h2>Quick Navigation</h2>
+
+    <nav aria-label="Sidebar">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="overview" aria-labelledby="overview-heading">
+      <h1 id="overview-heading">Enterprise Dashboard</h1>
+
+      <article>
+        <h2>Dashboard Overview</h2>
+        <p>
+          Monitor important business information from one accessible
+          dashboard.
+        </p>
+      </article>
+    </section>
+
+    <section id="reports" aria-labelledby="reports-heading">
+      <h2 id="reports-heading">Reports</h2>
+
+      <table>
+        <caption>Recent business reports</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Report</th>
+            <th scope="col">Status</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monthly Sales</td>
+            <td>Completed</td>
+            <td>September 2026</td>
+          </tr>
+
+          <tr>
+            <td>Accessibility Audit</td>
+            <td>In Progress</td>
+            <td>September 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="settings" aria-labelledby="settings-heading">
+      <h2 id="settings-heading">Settings</h2>
+
+      <form>
+        <fieldset>
+          <legend>Account Information</legend>
+
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <button type="submit">Save Settings</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section aria-labelledby="dialog-section-heading">
+      <h2 id="dialog-section-heading">Actions</h2>
+
+      <button
+        type="button"
+        aria-label="Open confirmation dialog"
+        onclick="document.getElementById('confirmation-dialog').showModal()"
+      >
+        Open Dialog
+      </button>
+
+      <dialog
+        id="confirmation-dialog"
+        aria-labelledby="dialog-title"
+      >
+        <h2 id="dialog-title">Confirm Action</h2>
+
+        <p>Are you sure you want to continue?</p>
+
+        <form method="dialog">
+          <button type="submit">Cancel</button>
+          <button type="submit">Confirm</button>
+        </form>
+      </dialog>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+  </footer>
+
+</body>
+</html>
