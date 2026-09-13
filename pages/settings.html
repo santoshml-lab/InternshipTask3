@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Accessible enterprise dashboard settings."
+  >
+  <title>Dashboard Settings</title>
+</head>
+
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Accessible Dashboard</a>
+
+      <ul>
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html" aria-current="page">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside aria-label="Sidebar navigation">
+    <h2>Quick Navigation</h2>
+
+    <nav aria-label="Sidebar">
+      <ul>
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html" aria-current="page">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section aria-labelledby="settings-heading">
+      <h1 id="settings-heading">Dashboard Settings</h1>
+
+      <article aria-labelledby="account-heading">
+        <h2 id="account-heading">Account Information</h2>
+
+        <form>
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                autocomplete="name"
+                required
+                aria-required="true"
+              >
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+              >
+            </div>
+
+            <div>
+              <label for="role">Role</label>
+              <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="admin">Administrator</option>
+                <option value="manager">Manager</option>
+                <option value="viewer">Viewer</option>
+              </select>
+            </div>
+
+            <button type="submit">Save Settings</button>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+  </footer>
+
+</body>
+</html>
