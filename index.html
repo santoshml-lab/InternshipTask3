@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta
     name="description"
     content="Accessible enterprise dashboard built with semantic HTML5."
   >
+
   <title>Accessible Enterprise Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <a href="#main-content">Skip to main content</a>
 
   <header>
@@ -20,14 +25,16 @@
       </a>
 
       <ul>
-  <li><a href="pages/overview.html">Overview</a></li>
-  <li><a href="pages/reports.html">Reports</a></li>
-  <li><a href="pages/settings.html">Settings</a></li>
+        <li>
+          <a href="pages/overview.html">Overview</a>
+        </li>
+        <li>
+          <a href="pages/reports.html">Reports</a>
+        </li>
+        <li>
+          <a href="pages/settings.html">Settings</a>
+        </li>
       </ul>
-        
-        
-        
-      
     </nav>
   </header>
 
@@ -36,23 +43,34 @@
 
     <nav aria-label="Sidebar">
       <ul>
-  <li><a href="pages/overview.html">Overview</a></li>
-  <li><a href="pages/reports.html">Reports</a></li>
-  <li><a href="pages/settings.html">Settings</a></li>
+        <li>
+          <a href="pages/overview.html">Overview</a>
+        </li>
+        <li>
+          <a href="pages/reports.html">Reports</a>
+        </li>
+        <li>
+          <a href="pages/settings.html">Settings</a>
+        </li>
       </ul>
-        
-        
-        
-      
     </nav>
   </aside>
 
   <main id="main-content">
-    <section id="overview" aria-labelledby="overview-heading">
-      <h1 id="overview-heading">Enterprise Dashboard</h1>
 
-      <article>
-        <h2>Dashboard Overview</h2>
+    <section
+      id="overview"
+      aria-labelledby="overview-heading"
+    >
+      <h1 id="overview-heading">
+        Enterprise Dashboard
+      </h1>
+
+      <article aria-labelledby="dashboard-overview-heading">
+        <h2 id="dashboard-overview-heading">
+          Dashboard Overview
+        </h2>
+
         <p>
           Monitor important business information from one accessible
           dashboard.
@@ -60,11 +78,18 @@
       </article>
     </section>
 
-    <section id="reports" aria-labelledby="reports-heading">
-      <h2 id="reports-heading">Reports</h2>
+    <section
+      id="reports"
+      aria-labelledby="reports-heading"
+    >
+      <h2 id="reports-heading">
+        Reports
+      </h2>
 
       <table>
-        <caption>Recent business reports</caption>
+        <caption>
+          Recent business reports
+        </caption>
 
         <thead>
           <tr>
@@ -90,8 +115,13 @@
       </table>
     </section>
 
-    <section id="settings" aria-labelledby="settings-heading">
-      <h2 id="settings-heading">Settings</h2>
+    <section
+      id="settings"
+      aria-labelledby="settings-heading"
+    >
+      <h2 id="settings-heading">
+        Settings
+      </h2>
 
       <form>
         <fieldset>
@@ -99,6 +129,7 @@
 
           <div>
             <label for="name">Full Name</label>
+
             <input
               type="text"
               id="name"
@@ -110,6 +141,7 @@
 
           <div>
             <label for="email">Email Address</label>
+
             <input
               type="email"
               id="email"
@@ -119,13 +151,19 @@
             >
           </div>
 
-          <button type="submit">Save Settings</button>
+          <button type="submit">
+            Save Settings
+          </button>
         </fieldset>
       </form>
     </section>
 
-    <section aria-labelledby="dialog-section-heading">
-      <h2 id="dialog-section-heading">Actions</h2>
+    <section
+      aria-labelledby="dialog-section-heading"
+    >
+      <h2 id="dialog-section-heading">
+        Actions
+      </h2>
 
       <button
         type="button"
@@ -139,20 +177,32 @@
         id="confirmation-dialog"
         aria-labelledby="dialog-title"
       >
-        <h2 id="dialog-title">Confirm Action</h2>
+        <h2 id="dialog-title">
+          Confirm Action
+        </h2>
 
-        <p>Are you sure you want to continue?</p>
+        <p>
+          Are you sure you want to continue?
+        </p>
 
         <form method="dialog">
-          <button type="submit">Cancel</button>
-          <button type="submit">Confirm</button>
+          <button type="submit">
+            Cancel
+          </button>
+
+          <button type="submit">
+            Confirm
+          </button>
         </form>
       </dialog>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 Accessible Enterprise Dashboard</p>
+    <p>
+      &copy; 2026 Accessible Enterprise Dashboard
+    </p>
   </footer>
 
 </body>
